@@ -3,7 +3,7 @@ export const metadata = {
   description: "world see see",
 };
 
-import HomeMap from "@/components/map/home";
+import ImagePage from "@/components/image/page";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-white mb-4">
           Welcome to World
         </h1>
-        <HomeMap />
+        <ImagePage />
         <p className="text-lg text-white mb-8">traval china, travel world</p>
       </div>
     </>
