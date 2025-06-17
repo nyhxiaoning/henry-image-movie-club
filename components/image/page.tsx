@@ -5,17 +5,18 @@ import { motion } from 'framer-motion';
 
 export default function VisionStudioHomePage() {
     return (
-        <div className="min-h-screen bg-black text-white font-sans overflow-hidden">
+        <div className="min-h-screen bg-black text-white font-sans overflow-hidden w-full">
             {/* 背景动态粒子效果 */}
             <div className="absolute inset-0 -z-10 bg-gradient-to-br from-gray-900 to-black" />
 
             {/* 顶部导航栏 */}
             <header className="flex justify-between items-center px-10 py-6 border-b border-gray-700 bg-opacity-30 backdrop-blur-md">
                 <div className="flex items-center gap-4">
-                    <Image src="/vision-logo.png" alt="Vision Studio" width={50} height={50} />
+                    <Image src="/homepage/1.jpeg" alt="Vision Studio" width={50} height={50} />
                     <div className="text-2xl font-bold tracking-wide">Vision Studio</div>
                 </div>
                 <nav className="flex gap-6 text-sm uppercase text-gray-300">
+                    {/* TODO:一个页面： */}
                     <a href="#gallery" className="hover:text-white transition">影像集</a>
                     <a href="#projects" className="hover:text-white transition">项目</a>
                     <a href="#contact" className="hover:text-white transition">联系</a>
@@ -51,11 +52,11 @@ export default function VisionStudioHomePage() {
                             whileHover={{ scale: 1.05 }}
                         >
                             <Image
-                                src={`/gallery/img${i}.jpg`}
+                                src={`/homepage/${i}.jpeg`}
                                 alt={`影像${i}`}
-                                width={600}
-                                height={400}
-                                className="object-cover w-full h-full"
+                                width={100}
+                                height={80}
+                                className="object-cover "
                             />
                         </motion.div>
                     ))}

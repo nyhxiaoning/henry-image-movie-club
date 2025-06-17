@@ -9,7 +9,7 @@
 import Image from 'next/image'
 import Logo from './logo'
 import footLogo from '@/public/images/foot_logo.png'
-import icpImg from '@/public/images/icp.png'
+// import icpImg from '@/public/images/icp.png'
 // import icpImg from '@/public/images/icp.png'
 
 export default function Footer() {

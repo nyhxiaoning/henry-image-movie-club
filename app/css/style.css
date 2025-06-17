@@ -17,7 +17,7 @@
 }
 
   .beian-link::before {
-    content: url('./../../public/images/icp.png');
+    content: url('./../../public/homepage/2.png');
       /* 图标路径 */
       display: inline-block;
       margin-right: 4px;
